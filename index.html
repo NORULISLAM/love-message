@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Love Message</title>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
-        background-size: 400% 400%;
-        animation: gradientMove 8s ease infinite;
-        margin: 0;
-        font-family: "Arial", sans-serif;
-      }
-      h1 {
-        font-size: 5rem;
-        color: white;
-        text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
-        animation: glow 2s infinite alternate;
-      }
-      @keyframes gradientMove {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-      @keyframes glow {
-        from {
-          text-shadow: 0 0 10px #fff, 0 0 20px #ff6b6b, 0 0 30px #ff6b6b;
-        }
-        to {
-          text-shadow: 0 0 20px #fff, 0 0 40px #ff4d4d, 0 0 60px #ff4d4d;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Prema, I Love You ❤️</h1>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prema I Love You</title>
+  <style>
+    :root {
+      --primary-pink: #ff69b4; /* hot pink */
+      --base-font-size: 1rem;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-size: var(--base-font-size);
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+    .bouncing-text {
+      font-size: 10vw; /* responsive large text */
+      color: var(--primary-pink);
+      text-align: center;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="bouncing-text">Prema I Love You</h1>
+</body>
 </html>
